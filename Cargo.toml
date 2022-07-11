@@ -1,8 +1,12 @@
 [package]
 name = "hello_remote_world"
 version = "0.1.0"
+edition = "2021"
 authors = ["VS Code <vscode@microsoft.com>"]
 
 [lib]
 path ="./src/lib/lib.rs"
 
+[dependencies]
+# you can check the latest version here: https://crates.io/crates/yew
+yew = "0.19"
