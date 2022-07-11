@@ -32,7 +32,9 @@
 				"mutantdino.resourcemonitor",
 				"matklad.rust-analyzer",
 				"tamasfe.even-better-toml",
-				"serayuzgur.crates"
+				"serayuzgur.crates",
+				"GitHub.copilot",
+				"mhutchie.git-graph"
 			]
 		}
 	},
@@ -41,7 +43,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "rustc --version",
+	"postCreateCommand": "rustup target add wasm32-unknown-unknown && cargo install trunk",
 
 	// Comment out to run as root instead.
 	"remoteUser": "vscode"
